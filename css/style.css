@@ -23,7 +23,6 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
   /* 48 sp • H3 Heading */
 
   text-decoration: none;
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -38,7 +37,7 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0px;
+  padding: 0;
 }
 
 .nav_link{
@@ -49,7 +48,7 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
-  padding: 0px 20px 0px 20px;
+  padding: 0 20px 0 20px;
 
   /* Purple / Dark */
 
@@ -66,12 +65,11 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
 }
 
 .header button{
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   padding: 0 2vw 0 2vw;
-  border: 0px;
+  border: 0;
   /* White */
 
   color: #FFFFFF;
@@ -81,7 +79,7 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
   border-radius: 999px;
   /* 2 dp • Dark shadow */
 
-  text-shadow: 0px 2px 4px rgba(38, 50, 56, 0.16), 0px 4px 8px rgba(38, 50, 56, 0.08);
+  text-shadow: 0 2px 4px rgba(38, 50, 56, 0.16), 0 4px 8px rgba(38, 50, 56, 0.08);
 }
 
 /*styles for main block*/
@@ -96,7 +94,6 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
 .main_block h1{
   /* 96 sp • H1 Heading */
   margin-bottom: 0;
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 800;
   font-size: 96px;
@@ -109,13 +106,12 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
 
   /* Text Shadow / White */
 
-  text-shadow: 0px 4px 0px #FFFFFF;
+  text-shadow: 0 4px 0 #FFFFFF;
 }
 
 .main_block h2{
   /* 64 sp • H2 Heading */
   margin-top: 0;
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 900;
   font-size: 64px;
@@ -128,6 +124,50 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
   /* Black */
 
   color: #2D3436;
+}
+
+.green_C{
+  background-image: url("../icons/greenCircle.svg");
+  position: absolute;
+  width: 191px;
+  height: 51px;
+  left: calc(50% - 185px/2 + 41.5px);
+  top: 200px;
+  z-index: -1;
+}
+
+
+.yellow_Rec_div{
+  height: 2000px;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  z-index: -2;
+  margin: 0 0 300px 0;
+}
+.yellow_Rec{
+  height: 767.9069692797068px;
+  width: 1376.0297616065034px;
+  border-radius: 99px;
+  bottom: 100px;
+  margin: 0 0 75% 47%;
+  opacity: 50%;
+  /* Yellow / Light */
+  position: absolute;
+  background: #FFEAA7;
+  transform: rotate(-45deg);
+}
+
+.dots{
+  /* 🎨 Dots 1 */
+  background-image: url("../icons/Dots 1.svg");
+  z-index: 0;
+
+  position: absolute;
+  width: 209px;
+  height: 285px;
+  right: 0;
+  top: 90px;
 }
 
 .main_block span{
@@ -145,11 +185,9 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
   position: absolute;
   height: 102px;
   width: 270px;
-  border-radius: 0px;
-
+  border-radius: 0;
   /* 18 sp • Paragraph Default */
 
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -180,15 +218,13 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
 .img_green p{
   height: 348px;
   width: 438px;
-  border-radius: 0px;
+  border-radius: 0;
   /* 48 sp • H3 Heading */
 
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 56px;
-  /* or 117% */
 
   display: flex;
   text-align: center;
@@ -201,7 +237,7 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
 
   /* Text Shadow / Dark */
 
-  text-shadow: 0px 4px 0px #000000;
+  text-shadow: 0 4px 0 #000000;
 
 }
 
@@ -212,7 +248,6 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
   grid-row-start: 1;
   /* 18 sp • Paragraph Default */
 
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -240,11 +275,9 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
 .img_yellow p{
   height: 432px;
   width: 238px;
-  border-radius: 0px;
-
+  border-radius: 0;
   /* 18 sp • Paragraph Bold */
 
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -255,9 +288,6 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
   justify-content: center;
   text-align: center;
   letter-spacing: 0.2px;
-
-
-
   /* White */
 
   color: #FFFFFF;
@@ -291,38 +321,27 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
 .grids button{
   height: 66px;
   width: 238px;
-  border: 0px;
+  border: 0;
 
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 4;
   grid-row-end: 4;
-
   /* White */
 
   background: #FFFFFF;
   /* 16 dp • Dark shadow */
 
-  box-shadow: 0px 8px 24px rgba(38, 50, 56, 0.1), 0px 16px 32px rgba(38, 50, 56, 0.08);
+  box-shadow: 0 8px 24px rgba(38, 50, 56, 0.1), 0 16px 32px rgba(38, 50, 56, 0.08);
   border-radius: 999px;
-
   /* 32 sp • H4 Heading */
 
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 48px;
   /* 32 sp • H4 Heading */
 
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 48px;
-  /* or 150% */
-
-  text-align: center;
   letter-spacing: -0.5px;
 
   /* Purple / Dark */
@@ -358,7 +377,6 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
 .img_dark-purple p{
   /* 48 sp • H3 Heading */
 
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -374,7 +392,7 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
 
   /* Text Shadow / Dark */
 
-  text-shadow: 0px 4px 0px #000000;
+  text-shadow: 0 4px 0 #000000;
 }
 
 .img_orange{
@@ -396,10 +414,18 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
   flex-direction: column;
 }
 
+.wiggles{
+  background-image: url("../icons/Wiggle.svg");
+  position: absolute;
+  height: 126px;
+  width: 200px;
+  margin: 37% 0 0 40%;
+  border-radius: 0;
+}
+
 .title_main_block2{
   /* 64 sp • H2 Heading */
   align-self: center;
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 900;
   font-size: 64px;
@@ -419,7 +445,6 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
 .second_title_main_block2{
   /* 32 sp • H4 Heading */
 
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -468,7 +493,6 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
   border-radius: 16px;
   filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px rgba(38, 50, 56, 0.08));
   background: #FFFFFF;
-  border-radius: 16px;
 }
 
 .logo_card2{
@@ -479,7 +503,6 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
 .title_card_text{
   /* 18 sp • Paragraph Bold */
 
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -494,7 +517,6 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
 }
 
 .text_card{
-  font-family: Inter;
   font-size: 12px;
   font-weight: 800;
   line-height: 15px;
@@ -506,9 +528,6 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
 }
 
 .text_card span{
-
-  styleName: 48 sp • H3 Heading;
-  font-family: Inter;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
@@ -519,7 +538,6 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
 .card1_El_list{
   /* 18 sp • Paragraph Default */
 
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -534,7 +552,6 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
 .card2_El_list{
   /* 18 sp • Paragraph Default */
 
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -548,7 +565,6 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
 .card3_El_List{
   /* 18 sp • Paragraph Default */
 
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -571,13 +587,9 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
   height: 64px;
   width: 306px;
   border-radius: 16px;
-
   border: 1px solid #ADADAD;
-  border-radius: 16px;
-
   /* 18 sp • Paragraph Bold */
 
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -595,24 +607,15 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
   width: 90px;
   background: white;
 
-  /* 12 sp • MINICAPS */
-
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 800;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-
   /* Black */
 
   color: #2D3436;
-
-  /* Black */
-
-  color: #2D3436;
-
   /* Purple / Dark */
 
   border: 1px solid #6C5CE7;
@@ -633,7 +636,6 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
 
   /* 24 sp • Paragraph Bold */
 
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -644,7 +646,6 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
   color: #FFFFFF;
 
   background: #6C5CE7;
-  border-radius: 16px;
   border: 0;
 }
 
@@ -659,7 +660,6 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
   /* 32 sp • H4 Heading */
   margin-left: 20%;
 
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -674,7 +674,6 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
   margin-top: 0;
   margin-left: 20%;
   max-width: 50%;
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
@@ -711,7 +710,6 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
 .title_main3{
   /* 24 sp • Paragraph Bold */
 
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -732,7 +730,6 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
 
   width: 12vw;
 
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -754,7 +751,6 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
   border-radius: 16px;
   /* 18 sp • Paragraph Bold */
 
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -809,12 +805,10 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
 
 /*styles for footer*/
 .footer{
-  margin-top: 8%;
-  margin-left: 20%;
+  margin: 8% 0 5% 20%;
   display: flex;
   flex-direction: row;
 }
-
 
 /*styles for left_up side footer*/
 .up_left_footer{
@@ -840,9 +834,7 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
 }
 
 .footer_hint{
-  /* 12 sp • MINICAPS */
 
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 800;
   font-size: 12px;
@@ -867,14 +859,11 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
   width: 170px;
 
   margin: 16px 30px 0 0;
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   text-decoration-line: none;
-
-  letter-spacing: 0.25px;
 
   /* Black */
 
@@ -886,7 +875,6 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
   width: 170px;
 
   margin: 16px 30px 0 0;
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -914,7 +902,6 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
 .up_right_footer p{
   /* 32 sp • H4 Heading */
   margin: 0 0 35px 0;
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -929,7 +916,6 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
 
 .grid_flex_footer{
   margin: 0 0 30px 0;
-
 }
 
 .grid_flex_footer input{
@@ -944,7 +930,6 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
   border-radius: 16px;
   /* 18 sp • Paragraph Default */
 
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -966,7 +951,6 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
   border-radius: 16px;
   /* 18 sp • Paragraph Default */
 
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -991,13 +975,11 @@ filter: drop-shadow(0px 2px 4px rgba(38, 50, 56, 0.16)) drop-shadow(0px 4px 8px 
   border-radius: 16px;
   /* 18 sp • Paragraph Bold */
 
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
 
-  letter-spacing: 0.2px;
   /* Purple / Dark */
 
   color: #6C5CE7;
@@ -1015,22 +997,24 @@ span input::placeholder{
   background: #6C5CE7;
   /* 16 dp • Dark shadow */
   border: none;
-  box-shadow: 0px 8px 24px rgba(38, 50, 56, 0.1), 0px 16px 32px rgba(38, 50, 56, 0.08);
+  box-shadow: 0 8px 24px rgba(38, 50, 56, 0.1), 0 16px 32px rgba(38, 50, 56, 0.08);
   border-radius: 16px;
   /* 24 sp • Paragraph Bold */
 
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
-  /* or 150% */
 
-  letter-spacing: 0.25px;
   /* White */
 
   color: #FFFFFF;
   /* 2 dp • Dark shadow */
 
-  text-shadow: 0px 2px 4px rgba(38, 50, 56, 0.16), 0px 4px 8px rgba(38, 50, 56, 0.08);
+  text-shadow: 0 2px 4px rgba(38, 50, 56, 0.16), 0 4px 8px rgba(38, 50, 56, 0.08);
+}
+
+.wave{
+  background-image: url("../icons/Wave.svg");
+  height: 100px;
 }
