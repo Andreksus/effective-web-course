@@ -1,6 +1,6 @@
 let slides = document.getElementsByClassName("mySlides");
 let slideIndex;
-
+let timeId = setInterval(plusSlides, 3000, 1);
 if (localStorage.getItem('index') == null && JSON.parse(localStorage.getItem('index')) !== 1){
     slideIndex = 1;
     localStorage.setItem('index', JSON.stringify(slideIndex));
@@ -8,6 +8,10 @@ if (localStorage.getItem('index') == null && JSON.parse(localStorage.getItem('in
 else
 {
     slideIndex = JSON.parse(localStorage.getItem('index'));
+}
+document.onkeypress = function(event){
+    if (event.code === "KeyC" || event.code === "KeyX") plusSlides(1);//e.code стрелочек и пробела не нашел :/
+    if (event.code === "KeyZ") plusSlides(-1);
 }
 
 //slideIndex = localStorage.getItem('index');
