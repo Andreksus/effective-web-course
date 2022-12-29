@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script>
+        $(document).ready(
+            function (){
+                showSlides(JSON.parse(localStorage.getItem('index')));
+            }
+        );
+    </script>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="slider.css">
-    <link rel="script" href="slider.js">
+    <script src="slider.js"></script>
     <title>Second Lab: Slider</title>
+
 </head>
 <body>
-    <div class="slider_container">
+    <div class="slider-container">
+        <div class="mySlides fade">
+            <div class="numberText">1/3</div>
+            <img src="slides/1.jpg" alt="">
+        </div>
 
+        <div class="mySlides fade">
+            <div class="numberText">2/3</div>
+            <img src="slides/2.jpg" alt="">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numberText">3/3</div>
+            <img src="slides/3.jpg" alt="">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)"></a>
+        <a class="next" onclick="plusSlides(1)"></a>
     </div>
+    <br>
 </body>
 </html>
