@@ -1,0 +1,7 @@
+.p{
+    margin: 50%;
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+}
