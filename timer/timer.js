@@ -24,7 +24,7 @@ function updateTimer(){
         clearInterval(timer);
         timer = null;
         localStorage.setItem('condition', JSON.stringify(0));
-        let opening = new Audio('../TimerOppening.mp3');
+        let opening = new Audio("../sound/TimerOpening.mp3");
         opening.play();
         document.body.style.backgroundColor = "#ff0000"
 
@@ -54,7 +54,6 @@ function startTimer(){
         return;
     }
     document.body.style.backgroundColor = "#ffffff";
-    ending.autoplay = true;
     console.log("Нажали на старт: запуск таймера");
     localStorage.setItem('minuteId', document.querySelector('.minutes').value);
     localStorage.setItem('secondId', document.querySelector('.seconds').value);
