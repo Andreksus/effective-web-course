@@ -8,17 +8,8 @@
   <script>
     $(document).ready(function (){
       document.querySelector('.minutes').value = JSON.parse(localStorage.getItem('minuteId'));
-      // document.getElementsByClassName('seconds').value = "local";
       document.querySelector('.seconds').value = JSON.parse(localStorage.getItem('secondId'));
-      //localStorage.clear();
-      console.log(1)
-      console.log(typeof(JSON.parse(localStorage.getItem('minuteId'))).toString());
-      // let minute = JSON.parse(localStorage.getItem('minuteId'));
-      // let second = JSON.parse(localStorage.getItem('secondId'));
-      // console.log("Задал минуты и секунды из памяти");
-      // console.log(minute);
-      console.log(typeof(document.querySelector('.minutes').value));
-
+      //localStorage.clear()
     });
   </script>
   <script src="timer.js"></script>
@@ -29,11 +20,11 @@
   <div class="inputs">
     <label>
       <p>Введите количество минут</p>
-      <input type="number" class="minutes">
+      <input placeholder="0" type="number" class="minutes">
     </label>
     <label>
       <p>Введите количество секунд</p>
-      <input class="seconds">
+      <input placeholder="0" type="number"  class="seconds">
     </label>
   </div>
   <div class="buttons">
@@ -41,7 +32,5 @@
     <button onclick="stopTimer()">Stop</button>
     <button onclick="resetTimer()">Reset</button>
   </div>
-  <script>
-  </script>
 </body>
 </html>
