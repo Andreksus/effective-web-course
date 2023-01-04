@@ -1,7 +1,18 @@
-.p{
-    margin: 50%;
+.text{
+    text-align: center;
+    font-size: 24px;
+    font-family: sans-serif;
+
 }
 .inputs{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin: 0 200px;
+    padding: 30px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 150px;
 }

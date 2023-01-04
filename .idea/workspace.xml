@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e285bbf1-84e7-492f-b15d-1cdfe1b45e06" name="Changes" comment="" />
+    <list default="true" id="e285bbf1-84e7-492f-b15d-1cdfe1b45e06" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timer/timer.css" beforeDir="false" afterPath="$PROJECT_DIR$/timer/timer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timer/timer.html" beforeDir="false" afterPath="$PROJECT_DIR$/timer/timer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timer/timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/timer/timer.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,15 +61,19 @@
       <recent name="F:\Study\Projects\EffectiveLabs\Laboratory1\icons" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="JavaScript Debug.timer.html">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Laboratory1/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="slider.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Laboratory1/slider/slider.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="timer.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Laboratory1/timer/timer.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.timer.html" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.slider.html" />
       </list>
@@ -99,7 +108,7 @@
       <workItem from="1672750124673" duration="51000" />
       <workItem from="1672750207871" duration="22000" />
       <workItem from="1672750235486" duration="329000" />
-      <workItem from="1672811120467" duration="621000" />
+      <workItem from="1672811120467" duration="3966000" />
     </task>
     <servers />
   </component>
