@@ -7,14 +7,17 @@
   <link rel="stylesheet" href="timer.css">
   <script>
     $(document).ready(function (){
-      document.getElementsByClassName('minutes').value = localStorage.getItem('minuteId');
-      document.getElementsByClassName('seconds').value = localStorage.getItem('secondId');
+      document.querySelector('.minutes').value = JSON.parse(localStorage.getItem('minuteId'));
+      // document.getElementsByClassName('seconds').value = "local";
+      document.querySelector('.seconds').value = JSON.parse(localStorage.getItem('secondId'));
       //localStorage.clear();
-      let minute = JSON.parse(localStorage.getItem('minuteId'));
-      let second = JSON.parse(localStorage.getItem('secondId'));
-      console.log("Задал минуты и секунды из памяти");
-      console.log(minute);
-      console.log(typeof(localStorage.getItem('minuteId')));
+      console.log(1)
+      console.log(typeof(JSON.parse(localStorage.getItem('minuteId'))).toString());
+      // let minute = JSON.parse(localStorage.getItem('minuteId'));
+      // let second = JSON.parse(localStorage.getItem('secondId'));
+      // console.log("Задал минуты и секунды из памяти");
+      // console.log(minute);
+      console.log(typeof(document.querySelector('.minutes').value));
 
     });
   </script>
@@ -26,7 +29,7 @@
   <div class="inputs">
     <label>
       <p>Введите количество минут</p>
-      <input type="number" value = `${minute}` class="minutes">
+      <input type="number" class="minutes">
     </label>
     <label>
       <p>Введите количество секунд</p>
@@ -38,5 +41,7 @@
     <button onclick="stopTimer()">Stop</button>
     <button onclick="resetTimer()">Reset</button>
   </div>
+  <script>
+  </script>
 </body>
 </html>
