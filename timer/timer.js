@@ -2,6 +2,10 @@
 /* Объявил интервал */
 let timer = null;
 
+let ending = new Audio();
+
+
+ending.src = "../sound/TimerEnding.mp3"
 /* Первая загрузка */
 if
 (localStorage.getItem('minuteId') == null || JSON.parse(localStorage.getItem('secondId')) == null) {
@@ -20,7 +24,10 @@ function updateTimer(){
         clearInterval(timer);
         timer = null;
         localStorage.setItem('condition', JSON.stringify(0));
+        let opening = new Audio('../TimerOppening.mp3');
+        opening.play();
         document.body.style.backgroundColor = "#ff0000"
+
         return;
         //console.log("Не конец?")
     };
@@ -47,6 +54,7 @@ function startTimer(){
         return;
     }
     document.body.style.backgroundColor = "#ffffff";
+    ending.autoplay = true;
     console.log("Нажали на старт: запуск таймера");
     localStorage.setItem('minuteId', document.querySelector('.minutes').value);
     localStorage.setItem('secondId', document.querySelector('.seconds').value);
