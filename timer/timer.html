@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!--  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>-->
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
   <meta charset="UTF-8">
   <title>Second lab: Timer</title>
   <link rel="stylesheet" href="timer.css">
+  <script>
+    $(document).ready(function (){
+      document.getElementsByClassName('minutes').value = localStorage.getItem('minuteId');
+      document.getElementsByClassName('seconds').value = localStorage.getItem('secondId');
+      //localStorage.clear();
+      let minute = JSON.parse(localStorage.getItem('minuteId'));
+      let second = JSON.parse(localStorage.getItem('secondId'));
+      console.log("Задал минуты и секунды из памяти");
+      console.log(minute);
+      console.log(typeof(localStorage.getItem('minuteId')));
+
+    });
+  </script>
   <script src="timer.js"></script>
 </head>
 <body>
@@ -12,16 +25,18 @@
 <!--  <div>1 minute 5 minutes 10 minutes</div>-->
   <div class="inputs">
     <label>
-      <input placeholder="Введите количество минут" class="minutes">
+      <p>Введите количество минут</p>
+      <input type="number" value = `${minute}` class="minutes">
     </label>
     <label>
-      <input placeholder="Введите количество секунд" class="seconds">
+      <p>Введите количество секунд</p>
+      <input class="seconds">
     </label>
   </div>
   <div class="buttons">
-    <button class="start">Start</button>
-    <button>Stop</button>
-    <button>Reset</button>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="stopTimer()">Stop</button>
+    <button onclick="resetTimer()">Reset</button>
   </div>
 </body>
 </html>
