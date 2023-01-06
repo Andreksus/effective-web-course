@@ -14,7 +14,7 @@
 }
 
 .prev{
-    background-image: url("../slider/slides/prev.svg");
+    background-image: url("slides/prev.svg");
     position: absolute;
     top: 50%;
     text-align-last: center;
@@ -25,7 +25,7 @@
 }
 
 .next{
-    background-image: url("../slider/slides/next.svg");
+    background-image: url("slides/next.svg");
     position: absolute;
     top: 50%;
     right: 0;
