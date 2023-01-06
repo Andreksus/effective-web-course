@@ -1,6 +1,6 @@
 let slides = document.getElementsByClassName("mySlides");
 let slideIndex;
-let timeId = setInterval(plusSlides, 3000, 1);
+setInterval(plusSlides, 3000, 1);
 if (localStorage.getItem('index') == null && JSON.parse(localStorage.getItem('index')) !== 1){
     slideIndex = 1;
     localStorage.setItem('index', JSON.stringify(slideIndex));
@@ -14,7 +14,6 @@ document.onkeypress = function(event){
     if (event.code === "KeyZ") plusSlides(-1);
 }
 
-//slideIndex = localStorage.getItem('index');
 function plusSlides(n){
     slideIndex+=n;
     localStorage.setItem('index', JSON.stringify(slideIndex));
