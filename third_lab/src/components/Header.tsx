@@ -8,7 +8,7 @@ export function Header(){
                 <img src="marvel_logo.svg" alt=""/>
             </Logo>
             <Links>
-                <Links_Pages><A cur={1} href="#">Characters</A></Links_Pages>
+                <Links_Pages><A cur={0} href="#">Characters</A></Links_Pages>
                 <Links_Pages><A cur={0} href="#">Comics</A></Links_Pages>
                 <Links_Pages><A cur={0} href="#">Series</A></Links_Pages>
             </Links>
@@ -22,16 +22,12 @@ const Head = styled.div`
   flex-direction: row;
 `
 
-const Logo = styled.div`
+export const Logo = styled.div`
   padding-top: 20px;
   padding-left: 15px;
+  padding-bottom: 0;
   height: 60px;
   width: 100px;
-`
-
-const Img = styled.img`
-  height: 100%;
-  width: 100%;
 `
 
 const Links = styled.nav`
@@ -56,5 +52,4 @@ const A = styled.a<Props>`
   font-size: 22px;
   text-decoration: ${props => props.cur === 1 ? 'underline' : 'none'};
   font-weight: bold;
-
 `
