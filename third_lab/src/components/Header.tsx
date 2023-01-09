@@ -12,7 +12,7 @@ export function Header(){
             <Links>
                 <Links_Pages><NavLink to="/Characters" style={({isActive}) => isActive? {textDecoration: "underline", textDecorationColor: "#f9c92d"}: {textDecoration: "none", }}><li>Characters</li></NavLink></Links_Pages>
                 <Links_Pages><NavLink to="/Comics" style={({isActive}) => isActive? {textDecoration: "underline", textDecorationColor: "#f9c92d"}: {textDecoration: "none", }}><li>Comics</li></NavLink></Links_Pages>
-                <Links_Pages><NavLink to="/Series" style={({isActive}) => isActive? {textDecoration: "underline", textDecorationColor: "#f9c92d"}: {textDecoration: "none", }}><li>Characters</li></NavLink></Links_Pages>
+                <Links_Pages><NavLink to="/Series" style={({isActive}) => isActive? {textDecoration: "underline", textDecorationColor: "#f9c92d"}: {textDecoration: "none", }}><li>Series</li></NavLink></Links_Pages>
             </Links>
         </Head>
     )
