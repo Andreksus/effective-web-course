@@ -16,9 +16,12 @@ export function Footer(){
 }
 
 const FooterBody = styled.div`
+  bottom: 0;
+  position: absolute;
   background: #555555;
   display: flex;
   flex-direction: column;
+  width: 100%;
 `
 
 const Text = styled.p`
