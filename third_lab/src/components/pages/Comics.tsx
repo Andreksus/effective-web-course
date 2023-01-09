@@ -1,14 +1,14 @@
 import React, {FC} from "react";
-import {characters} from "../Cards";
+import {comics} from "../Cards";
 import {ArrayCards, Button, Input, Line, SearchCharacters, Title, UpScreen} from "./Screen";
 import {Card, CardList} from "../Card";
 
-export const Characters: FC = () => {
-    const numb = characters.length;
+export const Comics: FC = () => {
+    const numb = comics.length;
     return (
         <div>
             <UpScreen>
-                <Title>Characters</Title>
+                <Title>Comics</Title>
                 <ArrayCards>({numb})</ArrayCards>
             </UpScreen>
             <SearchCharacters>
@@ -17,10 +17,9 @@ export const Characters: FC = () => {
             </SearchCharacters>
             <Line></Line>
             <CardList>
-                <Card card = {characters[0]}/>
-                <Card card = {characters[1]}/>
-                <Card card = {characters[2]}/>
-                <Card card = {characters[3]}/>
+                <Card card = {comics[0]}/>
+                <Card card = {comics[1]}/>
+                <Card card = {comics[2]}/>
             </CardList>
         </div>
     );
