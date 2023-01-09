@@ -17,7 +17,6 @@ const App = () => {
         <BrowserRouter>
             <Header/>
             <Routes>
-                {/*<Header/>*/}
                 <Route path={'/Characters'} element={<Characters/>}/>
                 <Route path={'/Comics'} element={<Comics/>}/>
                 <Route path={'/Series'} element={<Series/>}/>
