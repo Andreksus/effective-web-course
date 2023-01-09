@@ -1,22 +1,26 @@
-import React from "react";
+import React, {useState} from "react";
 import styled, { css } from "styled-components";
+import {NavLink} from "react-router-dom";
 
 export function Header(){
+
     return(
         <Head>
             <Logo>
                 <img src="marvel_logo.svg" alt=""/>
             </Logo>
             <Links>
-                <Links_Pages><A cur={0} href="#">Characters</A></Links_Pages>
-                <Links_Pages><A cur={0} href="#">Comics</A></Links_Pages>
-                <Links_Pages><A cur={0} href="#">Series</A></Links_Pages>
+                <Links_Pages><NavLink to="/Characters" style={({isActive}) => isActive? {textDecoration: "underline", textDecorationColor: "#f9c92d"}: {textDecoration: "none", }}><li>Characters</li></NavLink></Links_Pages>
+                <Links_Pages><NavLink to="/Comics" style={({isActive}) => isActive? {textDecoration: "underline", textDecorationColor: "#f9c92d"}: {textDecoration: "none", }}><li>Comics</li></NavLink></Links_Pages>
+                <Links_Pages><NavLink to="/Series" style={({isActive}) => isActive? {textDecoration: "underline", textDecorationColor: "#f9c92d"}: {textDecoration: "none", }}><li>Characters</li></NavLink></Links_Pages>
             </Links>
         </Head>
     )
+
+
 }
 
-const Head = styled.div`
+export const Head = styled.div`
   background: #ed1a3b;
   display: flex;
   flex-direction: row;
@@ -30,7 +34,7 @@ export const Logo = styled.div`
   width: 100px;
 `
 
-const Links = styled.nav`
+export const Links = styled.nav`
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -38,18 +42,22 @@ const Links = styled.nav`
   padding-left: 77%;
 `
 
-const Links_Pages = styled.li`
-  padding: 0 0 0 15px;
+export const Links_Pages = styled.ul`
+  padding: 0 15px 0 0;
   font-family: Avenir,serif;
-`
+  
+  li {
+    color: #f9c92d;
+    font-size: 22px;
+    font-weight: bold;
+    list-style: none;
+  }
+  
+`;
 
-type Props = {
+export type Props = {
     cur: number;
 }
 
-const A = styled.a<Props>`
-  color: #f9c92d;
-  font-size: 22px;
-  text-decoration: ${props => props.cur === 1 ? 'underline' : 'none'};
-  font-weight: bold;
-`
+
+
