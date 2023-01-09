@@ -1,7 +1,7 @@
 import React, {FC} from "react";
+import {characters} from "../Cards";
 import {ArrayCards, Button, Input, Line, SearchCharacters, Title, UpScreen} from "./Screen";
 import {Card, CardList} from "../Card";
-import {characters} from "../Cards";
 
 export const Characters: FC = () => {
     const numb = characters.length;

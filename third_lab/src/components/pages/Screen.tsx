@@ -13,38 +13,39 @@ export const Screen: FC = () => {
                 <Button>SEARCH</Button>
             </SearchCharacters>
             <Line></Line>
+            <div>
+
+            </div>
         </div>
 
     );
 }
 
-const UpScreen = styled.div`
+export const UpScreen = styled.div`
   display: flex;
 `
 
-const Title = styled.h1`
+export const Title = styled.h1`
   padding-left: 2%;
   font-weight: bolder;
   font-size: 40px;
-  font-family: Calibri;
+  font-family: Calibri, serif;
   opacity: 90%;
 `
 
-const ArrayCards = styled.h1`
+export const ArrayCards = styled.h1`
   padding: 18px 0 0 10px;
   opacity: 60%;
   font-weight: bold;
 `
 
-const SearchCharacters = styled.div`
-  padding-left: 2%;
-  padding-bottom: 20px;
+export const SearchCharacters = styled.div`
+  padding: 0 2% 20px 2%;
   margin-top: -15px;
   display: flex;
-  padding-bottom: 0;
 `
 
-const Input = styled.input`
+export const Input = styled.input`
   width: 1450px;
   height: 40px;
   font-size: 20px;
@@ -52,16 +53,16 @@ const Input = styled.input`
   opacity: 60%;
 `
 
-const Button = styled.button`
+export const Button = styled.button`
   margin-left: 2%;
-  width: 280px;
+  width: 265px;
   border: 0;
   background: #efad4d;
   color: white;
   font-size: 18px;
 `
 
-const Line = styled.hr`
-  margin: 25px 46px 25px 2%;
-  opacity: 40%;
+export const Line = styled.hr`
+  margin: 20px 46px 10px 2%;
+  opacity: 30%;
 `
