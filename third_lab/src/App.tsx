@@ -7,6 +7,7 @@ import {BrowserRouter, NavLink, Route, Router, Routes} from "react-router-dom";
 import {Card, CardList} from "./components/Card";
 import {Characters} from "./components/pages/Characters";
 import {Comics} from "./components/pages/Comics";
+import {Series} from "./components/pages/Series";
 
 const App = () => {
     const [idScreen, screenChange] = useState(1);
@@ -19,7 +20,7 @@ const App = () => {
                 {/*<Header/>*/}
                 <Route path={'/Characters'} element={<Characters/>}/>
                 <Route path={'/Comics'} element={<Comics/>}/>
-                <Route path={'/Series'} element={<Screen/>}/>
+                <Route path={'/Series'} element={<Series/>}/>
             </Routes>
             <Footer/>
         </BrowserRouter>

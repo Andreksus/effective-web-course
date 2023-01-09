@@ -32,14 +32,42 @@ export const comics: ICard[] = [
         description: "The Human Torch is alone in New York, trying to survive in a city that hates and fears — well, mostly him specifically.",
         image: "https://i.annihil.us/u/prod/marvel/i/mg/3/b0/63b4782a80f83/portrait_uncanny.jpg",
     },
+
     {
         title: "Shang-Chi: Master Of The Ten Rings (2023) #1",
         description: "Shang-Chi is lost in time and the only one who can help him is…his father?!",
         image: "https://i.annihil.us/u/prod/marvel/i/mg/6/d0/63b477fe118c7/portrait_uncanny.jpg",
     },
+
     {
         title: "Spider-Man (2022) #4",
-        description: "VThe End of the Spider-Verse rages on! The tremors will be felt until it all ends!",
+        description: "The End of the Spider-Verse rages on! The tremors will be felt until it all ends!",
         image: "https://i.annihil.us/u/prod/marvel/i/mg/7/00/63b477fd894a2/portrait_uncanny.jpg",
+    }
+]
+
+export const series: ICard[] = [
+    {
+        title: "Spider-Man: No Way Home",
+        description: "After Quentin Beck frames Peter Parker for his murder and reveals Parker's identity as Spider-Man.",
+        image: "https://terrigen-cdn-dev.marvel.com/content/prod/1x/spider-mannowayhome_lob_crd_03.jpg",
+    },
+
+    {
+        title: "Avengers: EndGame",
+        description: "In 2018, twenty-three days after Thanos erased half of all life in the universe,Carol Danvers rescues Tony Stark and Nebula from deep gal..",
+        image: "https://terrigen-cdn-dev.marvel.com/content/prod/1x/avengersendgame_lob_crd_05_2.jpg",
+    },
+
+    {
+        title: "Ant Man and The Wasp: Quantumania",
+        description: "Super-Hero partners Scott Lang (Paul Rudd) and Hope Van Dyne (Evangeline Lilly) return to continue their..",
+        image: "https://terrigen-cdn-dev.marvel.com/content/prod/1x/antmanandthewaspquantumania_lob_crd_02.jpg",
+    },
+
+    {
+        title: "Doctor Strange in the Multiverse of Madness",
+        description: "America Chavez and a version of Stephen Strange are chased by a demon in the space between..",
+        image: "https://terrigen-cdn-dev.marvel.com/content/prod/1x/doctorstrangeinthemultiverseofmadness_lob_crd_02_3.jpg",
     }
 ]

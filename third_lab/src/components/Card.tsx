@@ -29,7 +29,7 @@ const CardBody = styled.div`
 
 const Image = styled.img`
   width: 100%;
-  height: 100%;
+  //height: 100%;
 `
 
 export const CardList = styled.div`
@@ -38,6 +38,7 @@ export const CardList = styled.div`
 `
 
 const CardsImage = styled.div`
+  overflow: hidden;
   height: 180px;
   //background: #646cff;
 `
