@@ -1,0 +1,36 @@
+.slider-container{
+    position: relative;
+    margin: auto;
+    max-width: 600px;
+}
+
+.numberText{
+    padding: 0 0 0 50%;
+}
+
+.mySlides img{
+    width: 600px;
+    height: 800px;
+}
+
+.prev{
+    background-image: url("slides/prev.svg");
+    position: absolute;
+    top: 50%;
+    text-align-last: center;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    z-index: 1;
+}
+
+.next{
+    background-image: url("slides/next.svg");
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    height: 80px;
+    width: 80px;
+    z-index: 1;
+}
