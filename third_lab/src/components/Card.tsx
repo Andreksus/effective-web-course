@@ -6,6 +6,7 @@ interface CardProps {
 }
 
 export function Card(props: CardProps){
+
     return (
             <CardBody>
                 <CardsImage>

@@ -12,14 +12,14 @@ import {Series} from "./components/pages/Series";
 const App = () => {
     const [idScreen, screenChange] = useState(1);
 
-
     return(
         <BrowserRouter>
             <Header/>
             <Routes>
-                <Route path={'/Characters'} element={<Characters/>}/>
+                <Route path={'/Characters/*'} element={<Characters/>}/>
                 <Route path={'/Comics'} element={<Comics/>}/>
                 <Route path={'/Series'} element={<Series/>}/>
+                <Route path={"/Characters/0"} element={<Comics/>}/>
             </Routes>
             <Footer/>
         </BrowserRouter>
