@@ -9,7 +9,7 @@ export interface CardProps {
 export function Card(props: CardProps){
 
     return (
-            <CardBody href = "Characters/0">
+            <CardBody href = {props.card.category + '/' + JSON.stringify(props.card.id)}>
                 <CardsImage>
                     <Image src={props.card.image} alt="здесь должна быть картинка персонажа"/>
                 </CardsImage>
