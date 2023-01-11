@@ -2,8 +2,10 @@ import React, {FC} from "react";
 import {ArrayCards, Button, Input, Line, Screen, SearchCharacters, Title, UpScreen} from "./Screen";
 import {Card, CardList} from "../Card";
 import {characters} from "../Cards";
-import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Link, NavLink, Route, Routes} from "react-router-dom";
 import {Comics} from "./Comics";
+import styled from "styled-components";
+import {eventClick, onClick} from "../onClick";
 
 export const Characters: FC = () => {
     const numb = characters.length;
@@ -21,7 +23,6 @@ export const Characters: FC = () => {
             </SearchCharacters>
             <Line></Line>
             <CardList>
-                <Link to={"0"}><Card card = {characters[0]}/></Link>
                 <Card card = {characters[0]}/>
                 <Card card = {characters[1]}/>
                 <Card card = {characters[2]}/>
@@ -30,3 +31,10 @@ export const Characters: FC = () => {
         </div>
     );
 }
+
+const CardLink = styled.a`
+  height: 300px;
+  width: 265px;
+  text-decoration: none;
+  color: #666;
+`

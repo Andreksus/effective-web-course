@@ -1,14 +1,15 @@
 import {ICard} from "../types/ICard";
 import styled from "styled-components";
-
-interface CardProps {
+import {Link, LinkProps, NavLinkProps} from "react-router-dom";
+export interface CardProps {
     card: ICard
 }
+
 
 export function Card(props: CardProps){
 
     return (
-            <CardBody>
+            <CardBody href = "Characters/0">
                 <CardsImage>
                     <Image src={props.card.image} alt="здесь должна быть картинка персонажа"/>
                 </CardsImage>
@@ -18,12 +19,13 @@ export function Card(props: CardProps){
     );
 }
 
-const CardBody = styled.div`
+const CardBody = styled.a`
+  text-decoration: none;
+  color: #666;
   border: 1px solid #cacaca;
   overflow: hidden;
   height: 300px;
   width: 265px;
-  //background: #888888;
   margin-right: 2%;
   
 `
