@@ -8,7 +8,7 @@ export const characters: ICard[] = [
         title: "AKHENATEN",
         description: "Pharaoh during Egypt's 18th Dynasty, Amenhotep established a monotheistic religion worshipping the sun god Aten, alleged creator of the universe.",
         image: "https://terrigen-cdn-dev.marvel.com/content/prod/1x/akhenaten.jpg",
-        refs: [["https://drawnstories.ru/comics/marvel-comics/Thanos/marvel-universe-the-end", ["Marvel Universe the End #001", "Pharaoh vs. the Marvel universe #002", "To ancient Egypt - on a time machine! #003"]],["#",["there are no TV series or movies with these characters yet..", ""]]]
+        refs: [["https://drawnstories.ru/comics/marvel-comics/Thanos/marvel-universe-the-end", "Marvel Universe the End #001"], ["https://drawnstories.ru/comics/marvel-comics/Thanos/marvel-universe-the-end","Pharaoh vs. the Marvel universe #002"], ["https://drawnstories.ru/comics/marvel-comics/Thanos/marvel-universe-the-end", "To ancient Egypt - on a time machine! #003"], ["#", "there are no TV series or movies with these characters yet.."], ["#", ""], ["#", ""]]
     },
 
     {
@@ -17,7 +17,8 @@ export const characters: ICard[] = [
         title: "SCARLET SPIDER",
         description: "Ben Reilly was the most genetically stable of the many clones of Spider-Man created by Professor Miles Warren, the Jackal.",
         image: "https://terrigen-cdn-dev.marvel.com/content/prod/1x/reilly_head.jpg",
-        refs: [["https://drawnstories.ru/comics/marvel-comics/Thanos/marvel-universe-the-end", ["Marvel Universe the End #001", "Pharaoh vs. the Marvel universe #002", "To ancient Egypt - on a time machine! #003"]],["#",["there are no TV series or movies with these characters yet..", ""]]]
+        //refs: [["https://drawnstories.ru/comics/marvel-comics/Spider-Man/Scarlet-Spider", ["Ben Reilly: The Scarlet Spider #001", "Ben Reilly: The Scarlet Spider #004", "Scarlet Spider Unlimited #001"]],["https://www.kinopoisk.ru/series/95232/",["Spider-Man 1994", ""]]]
+        refs: [["#", ""],["#", ""],["#", ""],["#", ""],["#", ""], ["#", ""]]
     },
 
     {
@@ -26,7 +27,7 @@ export const characters: ICard[] = [
         title: "GHOST RIDER",
         description: "Bonded with the demon Zarathos, the motorcycle stunt man Johnny Blaze becomes the feared Ghost Rider.",
         image: "https://terrigen-cdn-dev.marvel.com/content/prod/1x/125grb_com_crd_01.jpg",
-        refs: ([["https://drawnstories.ru/comics/marvel-comics/Thanos/marvel-universe-the-end", ["Marvel Universe the End #001", "Pharaoh vs. the Marvel universe #002", "To ancient Egypt - on a time machine! #003"]]])
+        refs: [["https://drawnstories.ru/comics/marvel-comics/Thanos/marvel-universe-the-end", ["Marvel Universe the End #001", "Pharaoh vs. the Marvel universe #002", "To ancient Egypt - on a time machine! #003"]],["#",["there are no TV series or movies with these characters yet..", ""]]]
     },
 
     {

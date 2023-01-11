@@ -28,19 +28,20 @@ export function CardProfile(props: CardProps){
             </CardBack>
             <CardProfileFooter>
                 <Description>
-                    <TitleCard style={{color: "black", background: "none"}}>Description</TitleCard>
+                    <TitleCard style={{color: "black", background: "none"}}>Description:</TitleCard>
                     <h1 style={{color: "#ed1a3b", fontFamily: "Cambria"}}>{props.card.description}</h1>
                 </Description>
                 <Description>
                     <TitleCard style={{color: "black", background: "none"}}>{firstRef}</TitleCard>
-                    <Ref href={props.card.refs[0][0]}>{props.card.refs[0][1][0]}</Ref>
-                    <Ref href={props.card.refs[0][0]}>{props.card.refs[0][1][1]}</Ref>
-                    <Ref href={props.card.refs[0][0]}>{props.card.refs[0][1][2]}</Ref>
+                    <Ref href={props.card.refs[0][0]}>{props.card.refs[0][1]}</Ref>
+                    <Ref href={props.card.refs[1][0]}>{props.card.refs[1][1]}</Ref>
+                    <Ref href={props.card.refs[2][0]}>{props.card.refs[2][1]}</Ref>
                 </Description>
                 <Description>
                     <TitleCard style={{color: "black", background: "none"}}>{secondRef}</TitleCard>
-                    <Ref href={props.card.refs[1][0]}>{props.card.refs[1][1][0]}</Ref>
-                    <Ref href={props.card.refs[1][0]}>{props.card.refs[1][1][1]}</Ref>
+                    <Ref href={props.card.refs[3][0]}>{props.card.refs[3][1]}</Ref>
+                    <Ref href={props.card.refs[4][0]}>{props.card.refs[4][1]}</Ref>
+                    <Ref href={props.card.refs[5][0]}>{props.card.refs[5][1]}</Ref>
                 </Description>
             </CardProfileFooter>
         </div>
