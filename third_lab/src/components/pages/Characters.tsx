@@ -1,12 +1,8 @@
 import React, {FC} from "react";
-import {ArrayCards, Button, Input, Line, Screen, SearchCharacters, Title, UpScreen} from "./Screen";
+import {ArrayCards, Button, Input, Line, SearchCharacters, Title, UpScreen} from "./Screen";
 import {Card, CardList} from "../Card";
 import {characters} from "../Cards";
-import {BrowserRouter, Link, NavLink, Route, Routes} from "react-router-dom";
-import {Comics} from "./Comics";
 import styled from "styled-components";
-import {eventClick, onClick} from "../onClick";
-
 export const Characters: FC = () => {
     const numb = characters.length;
     const match = '/Characters/';
