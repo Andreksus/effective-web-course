@@ -18,7 +18,6 @@ export function Card(props: CardProps){
                 <Description>{props.card.description}</Description>
             </NavLink>
         </CardBody>
-
     );
 }
 
@@ -37,7 +36,7 @@ const CardBody = styled.div`
   margin-right: 2%;
 `
 
-const Image = styled.img`
+export const Image = styled.img`
   width: 100%;
   //height: 100%;
 `
