@@ -1,33 +1,42 @@
 import {ICard} from "../types/ICard";
 import styled from "styled-components";
-
-interface CardProps {
+import {Link, LinkProps, NavLink, NavLinkProps} from "react-router-dom";
+export interface CardProps {
     card: ICard
 }
 
+
 export function Card(props: CardProps){
+
     return (
-            <CardBody>
+        <CardBody>
+            <NavLink style={CardLink} to={JSON.stringify(props.card.id)}>
                 <CardsImage>
                     <Image src={props.card.image} alt="здесь должна быть картинка персонажа"/>
                 </CardsImage>
                 <Title>{props.card.title}</Title>
                 <Description>{props.card.description}</Description>
-            </CardBody>
+            </NavLink>
+        </CardBody>
     );
 }
 
+const CardLink = {
+    textDecoration: "none",
+    color: "#666",
+}
+
 const CardBody = styled.div`
+  text-decoration: none;
+  color: #666;
   border: 1px solid #cacaca;
   overflow: hidden;
   height: 300px;
   width: 265px;
-  //background: #888888;
   margin-right: 2%;
-  
 `
 
-const Image = styled.img`
+export const Image = styled.img`
   width: 100%;
   //height: 100%;
 `
